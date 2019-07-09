@@ -13,7 +13,7 @@ weatherForm.addEventListener('submit', (e) => {
 
     viesti2.textContent = ''
 
-    fetch('http://localhost:3000/weather?address=' + haettava).then((response) => {
+    fetch('/weather?address=' + haettava).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 viesti1.textContent = data.error
