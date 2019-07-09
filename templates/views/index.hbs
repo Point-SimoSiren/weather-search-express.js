@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Simon Säähakupalvelu</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <p>Voit hakea tämänhetkisen säätilanteen paikkakunnan tai nähtävyyden nimellä.</p>
+
+        <form>
+            <input placeholder="Anna paikka">
+            <button>Hae</button>
+        </form>
+        <p id="viesti1"></p>
+        <p id="viesti2"></p>
+
+    </div>
+
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+
+</body>
+
+</html>
